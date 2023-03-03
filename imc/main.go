@@ -61,7 +61,7 @@ func main() {
 		fmt.Println("Obesidade grau 1, \"roliço\"")
 	} else if imc < 40 {
 		fmt.Println("Obesidade grau 2, tua vó não te acha magro mais")
-	} else if imc < 25 {
+	} else {
 		fmt.Println("Obesidade grau 3, joga de tanker né?")
 	}
 
