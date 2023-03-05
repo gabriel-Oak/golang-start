@@ -14,7 +14,7 @@ func printConversionError(err error) {
 }
 
 func parseFloat(value string) (float64, error) {
-	return strconv.ParseFloat(strings.ReplaceAll(strings.ReplaceAll(value, "\r", ""), "\n", ""), 64)
+	return strconv.ParseFloat(strings.TrimSpace(value), 64)
 }
 
 func main() {
